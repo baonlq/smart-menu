@@ -10,4 +10,99 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.galaxydesigners.bean.smartmenu.BMIActivity">
 
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow>
+
+            <TextView
+                android:padding="3dip"
+                android:text="Age"></TextView>
+
+            <EditText
+                android:id="@+id/etAge"
+                style="@style/Widget.AppCompat.EditText"
+                android:inputType="number"
+                android:padding="3dip"
+                android:text="" />
+
+            <RadioGroup
+                android:id="@+id/rdgSex"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rdbMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Male" />
+
+                <RadioButton
+                    android:id="@+id/rdbFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Female" />
+            </RadioGroup>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:padding="3dip"
+                android:text="Height" />
+
+            <EditText
+                android:id="@+id/etHeight"
+                android:gravity="right"
+                android:inputType="number"
+                android:padding="3dip" />
+            <TextView
+                android:padding="3dip"
+                android:text="Cm" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:padding="3dip"
+                android:text="Weight" />
+
+            <EditText
+                android:id="@+id/etWeight"
+                android:gravity="right"
+                android:inputType="numberDecimal"
+                android:padding="3dip" />
+            <TextView
+                android:padding="3dip"
+                android:text="Kg" />
+
+        </TableRow>
+
+        <TableRow android:layout_width="match_parent">
+
+            <Button
+                android:id="@+id/btnCalculate"
+                android:layout_width="match_parent"
+                android:text="Calculate" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView android:text="Result" />
+
+            <TextView
+                android:id="@+id/tvResult"
+                android:text="0" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView android:text="Notification" />
+            <TextView android:id="@+id/tvNotification"
+                android:text="" />
+        </TableRow>
+    </TableLayout>
 </RelativeLayout>
